@@ -16,10 +16,11 @@ class HomeViewModel: ObservableObject {
         
         if coreDataViewModel.savedEntities.isEmpty == false
         {
-            coreDataViewModel.addChallenge(text: "Say hello to your team member")
-            for _ in 1...coreDataViewModel.savedEntities.count {
+            for _ in 1...3 {
                 addRandomChallenge()
             }
+        }else{
+            coreDataViewModel.addChallenge(text: "Say hello to your team member")
         }
         
         
@@ -40,6 +41,7 @@ class HomeViewModel: ObservableObject {
         
         return index 
     }
+    
     
     
 }

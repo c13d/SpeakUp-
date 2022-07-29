@@ -69,10 +69,29 @@ class CoreDataViewModel: ObservableObject{
     func updateChallenge(entity: ChallengeEntity){
         let currentText = entity.text ?? ""
         let newChallenge = currentText + "!"
-        entity.text = newChallenge
+        //entity.text = newChallenge
+        entity.count += 1
         
         saveData()
     }
+    
+    func findChallenge(text: String) -> ChallengeEntity{
+        for challenge in savedEntities{
+            if(challenge.text == text){
+                return challenge
+            }
+        }
+        
+        return savedEntities.first!
+    }
+    
+    func addCount(text: String){
+        let entity: ChallengeEntity = findChallenge(text: text)
+        updateChallenge(entity: entity)
+        print("\(entity.text) \(entity.count)")
+    }
+    
+
     
     func saveData(){
         do{

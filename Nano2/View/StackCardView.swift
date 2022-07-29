@@ -10,6 +10,7 @@ import SwiftUI
 struct StackCardView: View {
     
     @EnvironmentObject var homeData: HomeViewModel
+    @StateObject var coreDataViewModel = CoreDataViewModel()
     var challenge: Challenge
     
     // Gesture
@@ -38,6 +39,10 @@ struct StackCardView: View {
                     .cornerRadius(15)
                     .offset(y: -topOffset)
                     .offset(x: topOffset/2)
+                
+                Text("count: \(challenge.count)")
+                    .offset(y: 200 - topOffset)
+                    .offset(x: 120 + topOffset/2)
                 
             }
             
@@ -71,13 +76,15 @@ struct StackCardView: View {
                             // remove card
                             offset = (translation > 0 ? width : -width) * 2
                             // endSwipe = true
-                            endSwipeActions()
+                            
                             
                             if translation > 0 {
                                 rightSwipe()
                             }else{
                                 leftSwipe()
                             }
+                            
+                            endSwipeActions()
                         }
                         else{
                             // reset
@@ -103,13 +110,15 @@ struct StackCardView: View {
                 
                 withAnimation{
                     offset = (rightSwipe ? width : -width) * 2
-                    endSwipeActions()
+                    
                     
                     if rightSwipe{
                         self.rightSwipe()
                     }else{
                         leftSwipe()
                     }
+                    
+                    endSwipeActions()
                 }
             }
         }
@@ -152,6 +161,9 @@ struct StackCardView: View {
     }
     
     func rightSwipe(){
+        
+        coreDataViewModel.addCount(text: homeData.displaying_challenges.first!.text)
+        
         print("Right")
     }
 }

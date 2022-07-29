@@ -34,7 +34,7 @@ struct ChallengeManagerView: View {
                         .foregroundColor(.white)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(.pink)
+                        .background(.blue)
                         .cornerRadius(10)
                 })
                 .padding(.horizontal)
@@ -46,7 +46,7 @@ struct ChallengeManagerView: View {
                     ForEach(coreDataViewModel.savedEntities){ entity in
                         Text(entity.text ?? "No Challenge")
                             .onTapGesture {
-                                // vm.updateChallenge(entity: entity)
+                                coreDataViewModel.updateChallenge(entity: entity)
                             }
                     }
                     .onDelete(perform: coreDataViewModel.deleteChallenge)
