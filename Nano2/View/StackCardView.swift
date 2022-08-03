@@ -34,7 +34,7 @@ struct StackCardView: View {
                 Text("\(challenge.text)")
                     .aspectRatio(contentMode: .fill)
                     .frame(width: size.width - topOffset,  height: size.height)
-                    .background(LinearGradient(gradient: Gradient(colors: [colors[1], colors[2]]), startPoint: .top, endPoint: .bottom))
+                    .background(LinearGradient(gradient: Gradient(colors: [colors[0], colors[2]]), startPoint: .top, endPoint: .bottom))
                     //.border(.black)
                     .cornerRadius(15)
                     .offset(y: -topOffset)

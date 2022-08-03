@@ -15,7 +15,6 @@
 		F08E0824288FB260004719F9 /* ChallengeManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0823288FB260004719F9 /* ChallengeManagerView.swift */; };
 		F08E0827288FB3AB004719F9 /* ChallengeContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08E0825288FB3AB004719F9 /* ChallengeContainer.xcdatamodeld */; };
 		F08E0829288FCE17004719F9 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0828288FCE17004719F9 /* CoreDataViewModel.swift */; };
-		F08E082B289130BE004719F9 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E082A289130BE004719F9 /* AnimationView.swift */; };
 		F0F03730288E3D8300A20515 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0372F288E3D8300A20515 /* Challenge.swift */; };
 		F0F03732288E3DFC00A20515 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F03731288E3DFC00A20515 /* HomeViewModel.swift */; };
 		F0F03734288E3FD000A20515 /* StackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F03733288E3FD000A20515 /* StackCardView.swift */; };
@@ -32,7 +31,6 @@
 		F08E0823288FB260004719F9 /* ChallengeManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeManagerView.swift; sourceTree = "<group>"; };
 		F08E0826288FB3AB004719F9 /* ChallengeContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeContainer.xcdatamodel; sourceTree = "<group>"; };
 		F08E0828288FCE17004719F9 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
-		F08E082A289130BE004719F9 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		F0F0372F288E3D8300A20515 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		F0F03731288E3DFC00A20515 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F0F03733288E3FD000A20515 /* StackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCardView.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				F0F03733288E3FD000A20515 /* StackCardView.swift */,
 				F0F03735288E66B100A20515 /* ListChallengeGridView.swift */,
 				F08E0823288FB260004719F9 /* ChallengeManagerView.swift */,
-				F08E082A289130BE004719F9 /* AnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 				F08E0829288FCE17004719F9 /* CoreDataViewModel.swift in Sources */,
 				F08E0824288FB260004719F9 /* ChallengeManagerView.swift in Sources */,
 				F0F03734288E3FD000A20515 /* StackCardView.swift in Sources */,
-				F08E082B289130BE004719F9 /* AnimationView.swift in Sources */,
 				F0F03732288E3DFC00A20515 /* HomeViewModel.swift in Sources */,
 				F03F807B288A8A77000FB57F /* Nano2App.swift in Sources */,
 			);

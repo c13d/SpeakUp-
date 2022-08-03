@@ -20,9 +20,8 @@ class HomeViewModel: ObservableObject {
                 addRandomChallenge()
             }
         }else{
-            coreDataViewModel.addChallenge(text: "Say hello to your team member")
+            
         }
-        
         
     }
     
@@ -30,7 +29,6 @@ class HomeViewModel: ObservableObject {
         let randomInt = Int.random(in: 0..<coreDataViewModel.savedEntities.count)
         let challenge = coreDataViewModel.savedEntities[randomInt]
         displaying_challenges.append(Challenge(text: challenge.text!, count: Int(challenge.count)))
-        
     }
     
     func getIndex(challenge: Challenge)->Int{

@@ -31,6 +31,7 @@ class CoreDataViewModel: ObservableObject{
     
     func addSampleData(){
         if savedEntities.isEmpty {
+            addChallenge(text: "Say hello to your team member")
             for i in 1...10 {
                 addChallenge(text: "Sample \(i)")
             }
@@ -67,9 +68,6 @@ class CoreDataViewModel: ObservableObject{
     }
     
     func updateChallenge(entity: ChallengeEntity){
-        let currentText = entity.text ?? ""
-        let newChallenge = currentText + "!"
-        //entity.text = newChallenge
         entity.count += 1
         
         saveData()
